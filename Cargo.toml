@@ -1,0 +1,35 @@
+[package]
+name = "unishock"
+description = "Rust crate to interface with various shockers (PiShock/OpenShock)."
+authors = ["polina4096 <polina4096@icloud.com>"]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85.1"
+repository = "https://github.com/polina4096/unishock"
+license = "MIT OR Apache-2.0"
+keywords = ["pishock", "openshock", "shocker", "hardware", "serial"]
+categories = ["hardware-support"]
+
+[lints.clippy]
+# Stylistic
+self_named_module_files = "deny"
+needless_return = "allow"
+single_match = "allow"
+
+# Annoying default lints
+uninlined_format_args = "allow" # Inconsistency with complex format args
+new_without_default = "allow"   # Not all types make sense with default
+
+# Safety
+await_holding_invalid_type = "deny"
+await_holding_refcell_ref = "deny"
+await_holding_lock = "deny"
+disallowed_types = "deny"
+disallowed_methods = "deny"
+
+[dependencies]
+thiserror = { version = "2.0.17" }
+sealed = { version = "0.6.0" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.145" }
+serialport = { version = "4.8.1" }
