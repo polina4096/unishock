@@ -2,9 +2,12 @@
 
 Rust crate to interface with various shocker devices including PiShock and OpenShock.
 
+[![crates.io][Crate Logo]][Crate]
+[![Documentation][Doc Logo]][Doc]
+
 Currently this crate only supports serial communication for PiShock hubs and nothing else. Other ways to interact with the devices and OpenShock support is planned.
 
-All functionality supported by the PiShock serial port protocol is implemented.
+All functionality supported by the PiShock serial port API is implemented.
 
 ## Examples
 
@@ -44,3 +47,8 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in unishock by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
 </sub>
+
+[Crate]: https://crates.io/crates/unishock
+[Crate Logo]: https://img.shields.io/crates/v/unishock.svg
+[Doc]: https://docs.rs/unishock
+[Doc Logo]: https://docs.rs/unishock/badge.svg
