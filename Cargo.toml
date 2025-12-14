@@ -1,6 +1,6 @@
 [package]
 name = "unishock"
-description = "Rust crate to interface with various shockers (PiShock/OpenShock)."
+description = "Rust crate to interface with various remote-controlled shockers (PiShock/OpenShock)."
 authors = ["polina4096 <polina4096@icloud.com>"]
 version = "0.1.0"
 edition = "2024"
